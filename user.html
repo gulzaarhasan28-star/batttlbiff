@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Gaming Platform</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- ================================================================= -->
+    <!-- MONETAG KA POORA SCRIPT TAG YAHAN PASTE KAREIN -->
+    <!-- Aapke screenshot ke hisaab se, yeh hona chahiye: -->
+    <script src='//libtl.com/sdk.js' data-zone='10615508' data-sdk='show_10615508'></script>
+    <!-- ================================================================= -->
+    
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loader-overlay" class="visible"><div class="loader-spinner"></div></div>
+    <div id="blocked-overlay" class="hidden">
+        <div class="glass-card">
+            <h2>Account Blocked</h2>
+            <p>Your account has been blocked by an administrator.</p>
+        </div>
+    </div>
+    <div id="app-container" class="hidden">
+        <header class="main-header glass-card">
+            <div class="user-info"><span id="username-display"></span></div>
+            <div class="wallet"><span id="wallet-points">0</span><span> Points</span></div>
+        </header>
+        <nav id="main-nav">
+            <button class="nav-btn active" data-component="home">Home</button>
+            <button class="nav-btn" data-component="offers">Offers</button>
+        </nav>
+        <main id="main-content"></main>
+    </div>
+    <script type="module" src="app.js"></script>
+</body>
+</html>
